@@ -1,0 +1,23 @@
+{
+	"name": "folio",
+	"version": "1.0.0",
+	"description": "Intégration d'un porte folio - Animations - Vanilla",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass sass/main.scss css/style.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/remymerienne/Folio.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/remymerienne/Folio/issues"
+	},
+	"homepage": "https://github.com/remymerienne/Folio#readme",
+	"devDependencies": {
+		"sass": "^1.49.9"
+	}
+}
