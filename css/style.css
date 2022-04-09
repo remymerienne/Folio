@@ -347,7 +347,7 @@ template {
 }
 
 .container {
-  background-color: #2b3e50;
+  background-color: #263340;
 }
 
 .header {
@@ -426,7 +426,7 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.5;
+  opacity: 0.6;
   transition-property: opacity;
   transition-duration: 700ms;
 }
