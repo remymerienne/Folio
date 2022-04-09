@@ -347,12 +347,6 @@ template {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-}
-
-.page {
-  width: 100%;
   background-color: #2b3e50;
 }
 
@@ -364,7 +358,7 @@ template {
   justify-content: space-between;
   width: 100%;
   height: 71px;
-  padding: 0 4%;
+  padding: 0 5%;
   border-bottom: 1px solid #435260;
   background-color: #2b3e50;
   transition-property: background-color;
