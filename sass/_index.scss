@@ -69,9 +69,10 @@
   height: 25px;
 }
 
-.menu-icon:hover .fa-bars {
+.move-bars {
   transform: rotate(45deg) scale(0);
 }
-.menu-icon:hover .fa-xmark {
+
+.move-xmark {
   transform: rotate(90deg) scale(1);
 }
