@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "name": "Folio",
+      "path": "./"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.port": 5502,
+
+    "restoreTerminals.terminals": [
+      {
+        "splitTerminals": [
+          {
+            "name": "Sass",
+            "commands": ["npm run sass"]
+          }
+        ]
+      },
+      {
+        "splitTerminals": [
+          {
+            "name": "Git"
+          }
+        ]
+      }
+    ]
+  }
+}
