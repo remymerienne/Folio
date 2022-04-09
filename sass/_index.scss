@@ -1,0 +1,77 @@
+.header {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 65px;
+  padding: 0 10%;
+  border-bottom: 0.5px solid #17c0f0;
+  background-color: #2b3e50;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+  height: 100vh;
+  background-image: url('../images/lake.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.folio {
+  display: flex;
+  align-items: flex-end;
+  p {
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  p span {
+    color: #17c0f0;
+  }
+  .dot {
+    width: 5px;
+    height: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    background-color: #17c0f0;
+  }
+}
+
+.fa-bars {
+  position: absolute;
+  font-size: 25px;
+  color: #17c0f0;
+  transform: rotate(0deg) scale(1);
+  transition-property: transform;
+  transition-duration: 700ms;
+}
+
+.fa-xmark {
+  position: absolute;
+  margin-left: 2px;
+  margin-top: -2px;
+  font-size: 30px;
+  color: #17c0f0;
+  transform: rotate(45deg) scale(0);
+  transition-property: transform;
+  transition-duration: 700ms;
+  transition-delay: 100ms;
+}
+
+.menu-icon {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.menu-icon:hover .fa-bars {
+  transform: rotate(45deg) scale(0);
+}
+.menu-icon:hover .fa-xmark {
+  transform: rotate(90deg) scale(1);
+}
