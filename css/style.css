@@ -421,18 +421,59 @@ template {
 }
 
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100vh;
-  background-image: url("../images/lake.jpg");
+  background-color: rgba(38, 51, 64, 0.5);
+  background-image: url("../images/sunset.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.6;
-  transition-property: opacity;
+  background-blend-mode: darken;
+  transition-property: background-color;
   transition-duration: 700ms;
+}
+.main h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+}
+.main .my-button {
+  display: flex;
+  -moz-column-gap: 20px;
+  column-gap: 25px;
+}
+.main .my-button .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #17c0f0;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.main .my-button .button-second {
+  color: #17c0f0;
+  background-color: transparent;
+  border: 1px solid #17c0f0;
+  transition: all 700ms;
+}
+.main .my-button .button-second:hover {
+  color: white;
+  background-color: #17c0f0;
 }
 
 .js-main {
-  opacity: 0.4;
+  background-color: rgba(38, 51, 64, 0.7);
 }
 
 .nav {
