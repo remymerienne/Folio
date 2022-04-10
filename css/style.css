@@ -432,8 +432,20 @@ template {
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
-  transition-property: background-color;
-  transition-duration: 700ms;
+}
+.main .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(38, 51, 64, 0.4);
+  background-blend-mode: darken;
+}
+.main .js-modal {
+  display: initial;
 }
 .main h1 {
   color: white;
@@ -470,10 +482,6 @@ template {
 .main .my-button .button-second:hover {
   color: white;
   background-color: #17c0f0;
-}
-
-.js-main {
-  background-color: rgba(38, 51, 64, 0.7);
 }
 
 .nav {
