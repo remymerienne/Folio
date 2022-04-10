@@ -346,10 +346,6 @@ template {
   padding: 0;
 }
 
-.container {
-  background-color: #263340;
-}
-
 .header {
   position: fixed;
   z-index: 1;
@@ -434,18 +430,21 @@ template {
   background-blend-mode: darken;
 }
 .main .modal {
-  display: none;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(38, 51, 64, 0.4);
+  background-color: rgba(38, 51, 64, 0);
   background-blend-mode: darken;
+  transition-property: background-color, visibility;
+  transition-duration: 700ms;
 }
 .main .js-modal {
-  display: initial;
+  background-color: rgba(38, 51, 64, 0.4);
+  visibility: initial;
 }
 .main h1 {
   color: white;
