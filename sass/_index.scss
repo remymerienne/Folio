@@ -3,7 +3,7 @@
 
 .header {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,6 +73,28 @@
   background-color: #22323f;
 }
 
+// = Modal
+// = ========================
+
+.modal {
+  visibility: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(38, 51, 64, 0);
+  background-blend-mode: darken;
+  transition-property: background-color, visibility;
+  transition-duration: 700ms;
+}
+.js-modal {
+  background-color: rgba(38, 51, 64, 0.4);
+  visibility: initial;
+}
+
 // = Main
 // = ========================
 
@@ -88,24 +110,6 @@
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
-
-  .modal {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(38, 51, 64, 0);
-    background-blend-mode: darken;
-    transition-property: background-color, visibility;
-    transition-duration: 700ms;
-  }
-  .js-modal {
-    background-color: rgba(38, 51, 64, 0.4);
-    visibility: initial;
-  }
 
   h1 {
     color: white;
@@ -151,7 +155,7 @@
 
 .nav {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   width: 265px;
   height: 100vh;
   background-color: #2b3e50;
