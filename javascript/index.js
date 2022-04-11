@@ -14,28 +14,30 @@ menuIcon.addEventListener('click', () => {
 });
 
 const title = document.querySelector('h3');
-const txt = 'Bonjour les amis ';
+const txt = 'Bonjour les amis. ';
 
 function typewriter(word, index) {
   if (index < word.length) {
     setTimeout(() => {
-      title.innerHTML += `<span>${word[index]}</span>`;
+      if (index < 12) {
+        title.innerHTML += `<span class="red">${word[index]}</span>`;
+      } else {
+        title.innerHTML += `<span class="blue">${word[index]}</span>`;
+      }
       typewriter(txt, index + 1);
     }, 300);
   }
   if (index == word.length) {
-    setTimeout(() => {
-      title.innerHTML += `<span>${word[index]}</span>`;
-    }, 300);
     setTimeout(() => {
       title.innerHTML = '';
     }, 300);
     index = 0;
     setTimeout(() => {
       typewriter(txt, index);
-    }, 300);
+    }, 1000);
   }
 }
+
 setTimeout(() => {
   typewriter(txt, 0);
-}, 500);
+}, 1000);

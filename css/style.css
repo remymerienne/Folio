@@ -501,6 +501,10 @@ template {
   color: #17c0f0;
 }
 
+.red {
+  color: red;
+}
+
 .nav {
   position: absolute;
   z-index: 3;
