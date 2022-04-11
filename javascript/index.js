@@ -15,9 +15,9 @@ menuIcon.addEventListener('click', () => {
 
 const title = document.querySelector('h2');
 // eslint-disable-next-line quotes
-const txt = "I'm A Developer. ";
+const message = ["I'm A Developer.", "I'm A Freelancer."];
 
-function typewriter(word, index) {
+const typewriter = (word, index) => {
   if (index < word.length) {
     setTimeout(() => {
       if (index < 6) {
@@ -25,20 +25,30 @@ function typewriter(word, index) {
       } else {
         title.innerHTML += `<span class="blue">${word[index]}</span>`;
       }
-      typewriter(txt, index + 1);
-    }, 300);
-  }
-  if (index == word.length) {
+      typewriter(word, index + 1);
+    }, 200);
+  } else {
     setTimeout(() => {
       title.innerHTML = '';
-    }, 300);
-    index = 0;
-    setTimeout(() => {
-      typewriter(txt, index);
     }, 1000);
   }
-}
+};
+
+const altern = (message, index) => {
+  if (index < message.length) {
+    typewriter(message[index], 0);
+    setTimeout(() => {
+      altern(message, index + 1);
+    }, 4600);
+  }
+  if (index == message.length) {
+    index = 0;
+    setTimeout(() => {
+      altern(message, index);
+    }, 1000);
+  }
+};
 
 setTimeout(() => {
-  typewriter(txt, 0);
-}, 3000);
+  altern(message, 0);
+}, 1000);

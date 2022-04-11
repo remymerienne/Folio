@@ -450,11 +450,12 @@ template {
   background-blend-mode: darken;
 }
 .main h1 {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
+  text-align: center;
 }
 .main .my-button {
   display: flex;
@@ -489,17 +490,33 @@ template {
 
 .h2 {
   position: relative;
-  height: 30px;
-  margin-bottom: 30px;
+  height: 40px;
+  margin-bottom: 35px;
   font-family: "Open Sans", sans-serif;
   color: #c3c0c0;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: 2px;
 }
 
 .blue {
   color: #17c0f0;
+}
+
+.turn {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: mixed;
+  text-orientation: mixed;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  position: absolute;
+  left: 50px;
+  top: 175px;
 }
 
 .nav {
