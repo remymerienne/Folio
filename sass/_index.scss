@@ -112,6 +112,7 @@
   background-blend-mode: darken;
 
   h1 {
+    margin-bottom: 30px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 70px;
@@ -150,13 +151,13 @@
   }
 }
 
-// = Slider
+// = TypeWritter effect
 // = ========================
 
-.one,
-.two {
+.h2 {
   position: relative;
-  margin-bottom: 20px;
+  height: 30px;
+  margin-bottom: 30px;
   font-family: 'Open Sans', sans-serif;
   color: #c3c0c0;
   font-size: 25px;
@@ -165,9 +166,6 @@
 }
 .blue {
   color: #17c0f0;
-}
-.red {
-  color: red;
 }
 
 // = Nav

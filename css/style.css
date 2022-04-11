@@ -450,6 +450,7 @@ template {
   background-blend-mode: darken;
 }
 .main h1 {
+  margin-bottom: 30px;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 70px;
@@ -486,10 +487,10 @@ template {
   background-color: #17c0f0;
 }
 
-.one,
-.two {
+.h2 {
   position: relative;
-  margin-bottom: 20px;
+  height: 30px;
+  margin-bottom: 30px;
   font-family: "Open Sans", sans-serif;
   color: #c3c0c0;
   font-size: 25px;
@@ -499,10 +500,6 @@ template {
 
 .blue {
   color: #17c0f0;
-}
-
-.red {
-  color: red;
 }
 
 .nav {

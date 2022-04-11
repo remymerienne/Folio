@@ -13,14 +13,15 @@ menuIcon.addEventListener('click', () => {
   modal.classList.toggle('js-modal');
 });
 
-const title = document.querySelector('h3');
-const txt = 'Bonjour les amis. ';
+const title = document.querySelector('h2');
+// eslint-disable-next-line quotes
+const txt = "I'm A Developer. ";
 
 function typewriter(word, index) {
   if (index < word.length) {
     setTimeout(() => {
-      if (index < 12) {
-        title.innerHTML += `<span class="red">${word[index]}</span>`;
+      if (index < 6) {
+        title.innerHTML += `<span>${word[index]}</span>`;
       } else {
         title.innerHTML += `<span class="blue">${word[index]}</span>`;
       }
@@ -40,4 +41,4 @@ function typewriter(word, index) {
 
 setTimeout(() => {
   typewriter(txt, 0);
-}, 1000);
+}, 3000);
