@@ -486,6 +486,21 @@ template {
   background-color: #17c0f0;
 }
 
+.one,
+.two {
+  position: relative;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #c3c0c0;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.blue {
+  color: #17c0f0;
+}
+
 .nav {
   position: absolute;
   z-index: 3;

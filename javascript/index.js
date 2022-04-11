@@ -12,3 +12,30 @@ menuIcon.addEventListener('click', () => {
   header.classList.toggle('js-header');
   modal.classList.toggle('js-modal');
 });
+
+const title = document.querySelector('h3');
+const txt = 'Bonjour les amis ';
+
+function typewriter(word, index) {
+  if (index < word.length) {
+    setTimeout(() => {
+      title.innerHTML += `<span>${word[index]}</span>`;
+      typewriter(txt, index + 1);
+    }, 300);
+  }
+  if (index == word.length) {
+    setTimeout(() => {
+      title.innerHTML += `<span>${word[index]}</span>`;
+    }, 300);
+    setTimeout(() => {
+      title.innerHTML = '';
+    }, 300);
+    index = 0;
+    setTimeout(() => {
+      typewriter(txt, index);
+    }, 300);
+  }
+}
+setTimeout(() => {
+  typewriter(txt, 0);
+}, 500);
