@@ -3,14 +3,14 @@ const lines = document.querySelector('i.icons-box__lines');
 const cross = document.querySelector('i.icons-box__cross');
 const nav = document.querySelector('nav.nav');
 const header = document.querySelector('header.header');
-const modal = document.querySelector('div.modal');
+const wrap = document.querySelector('div.wrap');
 
 iconsBox.addEventListener('click', () => {
   lines.classList.toggle('js-lines');
   cross.classList.toggle('js-cross');
   nav.classList.toggle('js-nav');
   header.classList.toggle('js-header');
-  modal.classList.toggle('js-modal');
+  wrap.classList.toggle('js-wrap');
 });
 
 const title = document.querySelector('h2');
