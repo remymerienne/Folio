@@ -1,13 +1,13 @@
-const menuIcon = document.querySelector('div.menu-icon');
-const bars = document.querySelector('i.fa-bars');
-const xmark = document.querySelector('i.fa-xmark');
+const iconsBox = document.querySelector('div.icons-box');
+const lines = document.querySelector('i.icons-box__lines');
+const cross = document.querySelector('i.icons-box__cross');
 const nav = document.querySelector('nav.nav');
 const header = document.querySelector('header.header');
 const modal = document.querySelector('div.modal');
 
-menuIcon.addEventListener('click', () => {
-  bars.classList.toggle('js-bars');
-  xmark.classList.toggle('js-xmark');
+iconsBox.addEventListener('click', () => {
+  lines.classList.toggle('js-lines');
+  cross.classList.toggle('js-cross');
   nav.classList.toggle('js-nav');
   header.classList.toggle('js-header');
   modal.classList.toggle('js-modal');

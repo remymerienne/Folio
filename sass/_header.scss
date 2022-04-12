@@ -1,0 +1,72 @@
+// ----------------------------------------------------------------------------
+// * This file contains all styles related to the header of the site/application.
+// ----------------------------------------------------------------------------
+
+.header {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 71px;
+  padding: 0 5%;
+  border-bottom: 1px solid #435260;
+  background-color: #2b3e50;
+  transition-property: background-color;
+  transition-duration: 700ms;
+}
+
+.js-header {
+  background-color: #22323f;
+}
+
+// = ==================================
+
+.folio-header {
+  align-items: flex-end;
+
+  &__dot {
+    margin-bottom: 5px;
+  }
+}
+
+// = ==================================
+
+.icons-box {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+
+  &__lines {
+    position: absolute;
+    color: #17c0f0;
+    font-size: 30px;
+    transform: rotate(0deg) scale(1);
+    transition-property: transform;
+    transition-duration: 700ms;
+  }
+
+  &__cross {
+    position: absolute;
+    margin-left: 1px;
+    margin-top: -4px;
+    color: #17c0f0;
+    font-size: 38px;
+    transform: rotate(45deg) scale(0);
+    transition-property: transform;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
+  }
+}
+
+.js-lines {
+  transform: rotate(45deg) scale(0);
+}
+
+.js-cross {
+  transform: rotate(90deg) scale(1);
+}
+
+// * End
+// * ------------------------

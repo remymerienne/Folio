@@ -6,3 +6,6 @@ https://www.templatemonsterpreview.com/fr/demo/146486.html
 
 *******************************************************************************
 
+background original du main => rgba(39, 37, 37, 0.7)
+
+

@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+// abstracts
+@import 'variables';
+@import 'placeholders';
+// vendors
+@import 'fontawesome';
+// base
 @import 'normalize';
 @import 'base';
-@import 'index';
+@import 'fonts';
+@import 'typography';
+// components
+@import 'buttons';
+@import 'folio';
+@import 'wrap';
+// layout
+@import 'header';
+@import 'navigation';
+// pages
+@import 'home';

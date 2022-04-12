@@ -1,0 +1,29 @@
+// ----------------------------------------------------------------------------
+// * This file contains all styles related to the folio component.
+// ----------------------------------------------------------------------------
+
+.folio {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+
+  &__text {
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    &-first {
+      color: #17c0f0;
+    }
+  }
+
+  &__dot {
+    width: 5px;
+    height: 5px;
+    margin-left: 5px;
+    background-color: #17c0f0;
+  }
+}
+
+// * End
+// * ------------------------

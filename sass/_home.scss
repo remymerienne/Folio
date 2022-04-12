@@ -1,0 +1,90 @@
+// = Main
+// = ========================
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgba(38, 51, 64, 0.5);
+  background-image: url('../images/sunset.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+
+  h1 {
+    margin-bottom: 35px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .my-button {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 25px;
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 160px;
+      height: 50px;
+      border-radius: 25px;
+      background-color: #17c0f0;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+    .button-second {
+      color: #17c0f0;
+      background-color: transparent;
+      border: 1px solid #17c0f0;
+      transition: all 700ms;
+      &:hover {
+        color: white;
+        background-color: #17c0f0;
+      }
+    }
+  }
+}
+
+// = TypeWritter effect
+// = ========================
+
+.h2 {
+  position: relative;
+  height: 40px;
+  margin-bottom: 35px;
+  font-family: 'Open Sans', sans-serif;
+  color: #c3c0c0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.blue {
+  color: #17c0f0;
+}
+
+// - -------
+.turn {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: mixed;
+  text-orientation: mixed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  position: absolute;
+  left: 50px;
+  top: 175px;
+}

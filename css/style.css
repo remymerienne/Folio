@@ -346,77 +346,27 @@ template {
   padding: 0;
 }
 
-.header {
-  position: fixed;
-  z-index: 2;
+.folio {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 71px;
-  padding: 0 5%;
-  border-bottom: 1px solid #435260;
-  background-color: #2b3e50;
-  transition-property: background-color;
-  transition-duration: 700ms;
-}
-.header .folio-header {
-  display: flex;
-  align-items: flex-end;
   font-family: "Montserrat", sans-serif;
 }
-.header .folio-header p {
+.folio__text {
   color: white;
   font-size: 23px;
   font-weight: 600;
   letter-spacing: 1px;
 }
-.header .folio-header p span {
+.folio__text-first {
   color: #17c0f0;
 }
-.header .folio-header .dot {
+.folio__dot {
   width: 5px;
   height: 5px;
-  margin-bottom: 5px;
   margin-left: 5px;
   background-color: #17c0f0;
 }
-.header .menu-icon {
-  cursor: pointer;
-  width: 25px;
-  height: 25px;
-}
-.header .menu-icon .fa-bars {
-  position: absolute;
-  color: #17c0f0;
-  font-size: 30px;
-  transform: rotate(0deg) scale(1);
-  transition-property: transform;
-  transition-duration: 700ms;
-}
-.header .menu-icon .fa-xmark {
-  position: absolute;
-  margin-left: 1px;
-  margin-top: -4px;
-  color: #17c0f0;
-  font-size: 38px;
-  transform: rotate(45deg) scale(0);
-  transition-property: transform;
-  transition-duration: 700ms;
-  transition-delay: 100ms;
-}
-.header .menu-icon .js-bars {
-  transform: rotate(45deg) scale(0);
-}
-.header .menu-icon .js-xmark {
-  transform: rotate(90deg) scale(1);
-}
 
-.js-header {
-  background-color: #22323f;
-}
-
-.modal {
+.wrap {
   visibility: hidden;
   position: fixed;
   z-index: 1;
@@ -431,9 +381,146 @@ template {
   transition-duration: 700ms;
 }
 
-.js-modal {
+.js-wrap {
   background-color: rgba(38, 51, 64, 0.4);
   visibility: initial;
+}
+
+.header {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 71px;
+  padding: 0 5%;
+  border-bottom: 1px solid #435260;
+  background-color: #2b3e50;
+  transition-property: background-color;
+  transition-duration: 700ms;
+}
+
+.js-header {
+  background-color: #22323f;
+}
+
+.folio-header {
+  align-items: flex-end;
+}
+.folio-header__dot {
+  margin-bottom: 5px;
+}
+
+.icons-box {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.icons-box__lines {
+  position: absolute;
+  color: #17c0f0;
+  font-size: 30px;
+  transform: rotate(0deg) scale(1);
+  transition-property: transform;
+  transition-duration: 700ms;
+}
+.icons-box__cross {
+  position: absolute;
+  margin-left: 1px;
+  margin-top: -4px;
+  color: #17c0f0;
+  font-size: 38px;
+  transform: rotate(45deg) scale(0);
+  transition-property: transform;
+  transition-duration: 700ms;
+  transition-delay: 100ms;
+}
+
+.js-lines {
+  transform: rotate(45deg) scale(0);
+}
+
+.js-cross {
+  transform: rotate(90deg) scale(1);
+}
+
+.nav {
+  position: absolute;
+  z-index: 3;
+  width: 265px;
+  height: 100vh;
+  background-color: #2b3e50;
+  transform: translateX(-265px);
+  transition-property: transform;
+  transition-duration: 700ms;
+}
+
+.js-nav {
+  transform: translateX(0px);
+}
+
+.folio-nav {
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+  border-bottom: 1px solid #263340;
+}
+.folio-nav__dot {
+  margin-top: 12px;
+}
+
+.nav-list {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+}
+.nav-list__item {
+  display: flex;
+  align-items: center;
+  height: 8.2vh;
+  padding-left: 30px;
+  border-top: 1px solid #374757;
+  border-bottom: 1px solid #263340;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition-property: background-color;
+  transition-duration: 700ms;
+}
+.nav-list__item:hover {
+  background-color: #263340;
+}
+.nav-list__first-item {
+  box-shadow: inset 0px 15px 15px -14px #263340;
+  color: #17c0f0;
+}
+.nav-list .link {
+  cursor: pointer;
+}
+.nav-list .link .nav-icon {
+  padding-bottom: 3px;
+  font-size: 15px;
+}
+.nav-list .link .fa-house-chimney {
+  margin-right: 20px;
+}
+.nav-list .link .fa-user {
+  margin-right: 25px;
+}
+.nav-list .link .fa-list {
+  margin-right: 23px;
+}
+.nav-list .link .fa-graduation-cap {
+  margin-right: 18px;
+}
+.nav-list .link .fa-suitcase {
+  margin-right: 22px;
+}
+.nav-list .link .fa-newspaper {
+  margin-right: 22px;
+}
+.nav-list .link .fa-location-dot {
+  margin-right: 26px;
 }
 
 .main {
@@ -517,97 +604,6 @@ template {
   position: absolute;
   left: 50px;
   top: 175px;
-}
-
-.nav {
-  position: absolute;
-  z-index: 3;
-  width: 265px;
-  height: 100vh;
-  background-color: #2b3e50;
-  transform: translateX(-265px);
-  transition-property: transform;
-  transition-duration: 700ms;
-}
-.nav .folio-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 170px;
-  border-bottom: 1px solid #263340;
-  font-family: "Montserrat", sans-serif;
-}
-.nav .folio-nav p {
-  color: white;
-  font-size: 23px;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.nav .folio-nav p span {
-  color: #17c0f0;
-}
-.nav .folio-nav .dot {
-  width: 5px;
-  height: 5px;
-  margin-top: 12px;
-  margin-left: 5px;
-  background-color: #17c0f0;
-}
-.nav ul {
-  list-style-type: none;
-  font-family: "Open Sans", sans-serif;
-}
-.nav ul .first-li {
-  box-shadow: inset 0px 15px 15px -14px #263340;
-  color: #17c0f0;
-}
-.nav ul li {
-  display: flex;
-  align-items: center;
-  height: 8.2vh;
-  padding-left: 30px;
-  border-top: 1px solid #374757;
-  border-bottom: 1px solid #263340;
-  color: white;
-  font-size: 14px;
-  letter-spacing: 2px;
-  transition-property: background-color;
-  transition-duration: 700ms;
-}
-.nav ul li:hover {
-  background-color: #263340;
-}
-.nav ul li .link {
-  cursor: pointer;
-}
-.nav ul li .link .nav-icons {
-  padding-bottom: 3px;
-  font-size: 15px;
-}
-.nav ul li .link .fa-house-chimney {
-  margin-right: 20px;
-}
-.nav ul li .link .fa-user {
-  margin-right: 25px;
-}
-.nav ul li .link .fa-list {
-  margin-right: 23px;
-}
-.nav ul li .link .fa-graduation-cap {
-  margin-right: 18px;
-}
-.nav ul li .link .fa-suitcase {
-  margin-right: 22px;
-}
-.nav ul li .link .fa-newspaper {
-  margin-right: 22px;
-}
-.nav ul li .link .fa-location-dot {
-  margin-right: 26px;
-}
-
-.js-nav {
-  transform: translateX(0px);
 }
 
 /*# sourceMappingURL=style.css.map */
