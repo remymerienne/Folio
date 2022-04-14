@@ -1,21 +1,29 @@
 @charset "UTF-8";
 
 // abstracts
-@import 'variables';
-@import 'placeholders';
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+
 // vendors
-@import 'fontawesome';
+@import 'vendors/normalize';
+@import 'vendors/fontawesome';
+
 // base
-@import 'normalize';
-@import 'base';
-@import 'fonts';
-@import 'typography';
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+
 // components
-@import 'buttons';
-@import 'folio';
-@import 'wrap';
+@import 'components/buttons';
+@import 'components/folio';
+@import 'components/information';
+@import 'components/secondary-navigation';
+@import 'components/social';
+@import 'components/wrap';
+
 // layout
-@import 'header';
-@import 'navigation';
+@import 'layout/header';
+@import 'layout/navigation';
+
 // pages
-@import 'home';
+@import 'pages/home';

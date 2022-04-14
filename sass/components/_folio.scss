@@ -25,5 +25,35 @@
   }
 }
 
+// = ========================
+
+.folio-header {
+  align-items: flex-end;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 700ms;
+
+  &__dot {
+    margin-bottom: 5px;
+  }
+}
+
+.js-folio {
+  opacity: 0.5;
+}
+
+// = ========================
+
+.folio-nav {
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+  border-bottom: 1px solid #263340;
+
+  &__dot {
+    margin-top: 12px;
+  }
+}
+
 // * End
 // * ------------------------

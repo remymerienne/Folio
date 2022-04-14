@@ -19,19 +19,6 @@
 
 // = ========================
 
-.folio-nav {
-  align-items: center;
-  justify-content: center;
-  height: 170px;
-  border-bottom: 1px solid #263340;
-
-  &__dot {
-    margin-top: 12px;
-  }
-}
-
-// = ========================
-
 .nav-list {
   list-style-type: none;
   font-family: 'Open Sans', sans-serif;
@@ -52,48 +39,46 @@
     &:hover {
       background-color: #263340;
     }
+    &--selected {
+      color: #17c0f0;
+    }
   }
 
   &__first-item {
     box-shadow: inset 0px 15px 15px -14px #263340;
-    color: #17c0f0;
   }
 
-  .link {
-    cursor: pointer;
+  .nav-icon {
+    padding-bottom: 3px;
+    font-size: 15px;
+  }
 
-    .nav-icon {
-      padding-bottom: 3px;
-      font-size: 15px;
-    }
+  .fa-house-chimney {
+    margin-right: 20px;
+  }
 
-    .fa-house-chimney {
-      margin-right: 20px;
-    }
+  .fa-user {
+    margin-right: 25px;
+  }
 
-    .fa-user {
-      margin-right: 25px;
-    }
+  .fa-list {
+    margin-right: 23px;
+  }
 
-    .fa-list {
-      margin-right: 23px;
-    }
+  .fa-graduation-cap {
+    margin-right: 18px;
+  }
 
-    .fa-graduation-cap {
-      margin-right: 18px;
-    }
+  .fa-suitcase {
+    margin-right: 22px;
+  }
 
-    .fa-suitcase {
-      margin-right: 22px;
-    }
+  .fa-newspaper {
+    margin-right: 22px;
+  }
 
-    .fa-newspaper {
-      margin-right: 22px;
-    }
-
-    .fa-location-dot {
-      margin-right: 26px;
-    }
+  .fa-location-dot {
+    margin-right: 26px;
   }
 }
 

@@ -1,0 +1,41 @@
+// ----------------------------------------------------------------------------
+// * This file contains styles related to the information component.
+// ----------------------------------------------------------------------------
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__h1 {
+    margin: 0 0 35px 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__h2 {
+    height: 30px;
+    margin-bottom: 35px;
+    font-family: 'Open Sans', sans-serif;
+    color: #c3c0c0;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    .js-emphasis {
+      color: #17c0f0;
+    }
+  }
+
+  .button-block {
+    display: flex;
+    -moz-column-gap: 20px;
+    column-gap: 25px;
+  }
+}
+
+// * End
+// * ------------------------

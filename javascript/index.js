@@ -3,6 +3,7 @@ const lines = document.querySelector('i.icons-box__lines');
 const cross = document.querySelector('i.icons-box__cross');
 const nav = document.querySelector('nav.nav');
 const header = document.querySelector('header.header');
+const folio = document.querySelector('header .folio-header');
 const wrap = document.querySelector('div.wrap');
 
 iconsBox.addEventListener('click', () => {
@@ -10,6 +11,7 @@ iconsBox.addEventListener('click', () => {
   cross.classList.toggle('js-cross');
   nav.classList.toggle('js-nav');
   header.classList.toggle('js-header');
+  folio.classList.toggle('js-folio');
   wrap.classList.toggle('js-wrap');
 });
 
@@ -23,7 +25,7 @@ const typewriter = (word, index) => {
       if (index < 6) {
         title.innerHTML += `<span>${word[index]}</span>`;
       } else {
-        title.innerHTML += `<span class="blue">${word[index]}</span>`;
+        title.innerHTML += `<span class="js-emphasis">${word[index]}</span>`;
       }
       typewriter(word, index + 1);
     }, 200);

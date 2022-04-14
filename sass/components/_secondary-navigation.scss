@@ -1,0 +1,48 @@
+// ----------------------------------------------------------------------------
+// * This file contains styles related to the secondary navigation component.
+// ----------------------------------------------------------------------------
+
+.secondary-nav {
+  position: absolute;
+  left: 97%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .chip {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #17c0f0;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #17c0f0;
+
+    &--selected {
+      background-color: #17c0f0;
+    }
+
+    &__info {
+      position: absolute;
+      right: 20px;
+      margin-top: -5px;
+      visibility: hidden;
+      opacity: 0;
+      font-family: 'Open Sans', sans-serif;
+      white-space: nowrap;
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      transition-property: visibility, opacity;
+      transition-duration: 700ms;
+    }
+
+    &:hover .chip__info {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+// * End
+// * -------------------------

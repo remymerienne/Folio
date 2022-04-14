@@ -14,7 +14,11 @@
 </head>
 
 <body>
+
+
   <div class="wrap"></div>
+
+
   <header class="header">
     <div class="folio folio-header">
       <p class="folio__text"><span class="folio__text-first">F</span>olio</p>
@@ -25,66 +29,131 @@
       <i class="icons-box__cross fa-solid fa-xmark"></i>
     </div>
   </header>
+
+
   <nav class="nav">
     <div class="folio folio-nav">
       <p class="folio__text"><span class="folio__text-first">F</span>olio</p>
       <div class="folio__dot folio-nav__dot"></div>
     </div>
     <ul class="nav-list">
-      <li class="nav-list__item nav-list__first-item">
-        <div class="link">
+      <li class="nav-list__item nav-list__first-item nav-list__item--selected">
+        <a href="#">
           <i class="fa-solid fa-house-chimney nav-icon"></i>
           Home
-        </div>
+        </a>
       </li>
       <li class="nav-list__item">
-        <div class="link">
+        <a href="#">
           <i class="fa-solid fa-user nav-icon"></i>
           About
-        </div>
+        </a>
       </li>
       <li class="nav-list__item">
-        <div class="link">
+        <a href="#">
           <i class="fa-solid fa-list nav-icon"></i>
           Services
-        </div>
+        </a>
       </li>
       <li class="nav-list__item">
-        <div class="link">
+        <a href="#">
           <i class="fa-solid fa-graduation-cap nav-icon"></i>
           Resume
-        </div>
+        </a>
       </li>
       <li class="nav-list__item">
-        <div class="link">
+        <a href="#">
           <i class="fa-solid fa-suitcase nav-icon"></i>
           Portfolio
-        </div>
+        </a>
       </li>
       <li class="nav-list__item">
-        <div class="link">
+        <a href="#">
           <i class="fa-solid fa-newspaper nav-icon"></i>
           Blog
-        </div>
+        </a>
       </li>
       <li class="nav-list__item">
-        <div class="link">
+        <a href="#">
           <i class="fa-solid fa-location-dot nav-icon"></i>
           Contact
-        </div>
+        </a>
       </li>
     </ul>
   </nav>
 
 
-  <main class="main">
-    <p class="turn">FOLLOW ME</p>
-    <h1>Rémy Merienne</h1>
-    <h2 class="h2"></h2>
-    <div class="my-button">
-      <div class="button">Hire Me</div>
-      <div class="button button-second">Download CV</div>
+  <main class="home">
+
+
+    <div class="social">
+      <p class="social__paragraph">FOLLOW ME</p>
+      <div class="social__line"></div>
+      <ul class="social__list">
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+      </ul>
     </div>
+
+
+    <div class="information">
+      <h1 class="information__h1">Rémy Merienne</h1>
+      <h2 class="information__h2"></h2>
+      <div class="button-block">
+        <div class="button">Hire Me</div>
+        <div class="button button--active">Download CV</div>
+      </div>
+    </div>
+
+
+    <div class="secondary-nav">
+      <a href="#">
+        <div class="chip chip--selected"><span class="chip__info">Home</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">About</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">Services</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">Resume</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">Portfolio</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">Blog</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">Contact</span></div>
+      </a>
+    </div>
+
+
   </main>
 
 
