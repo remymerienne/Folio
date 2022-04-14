@@ -10789,12 +10789,8 @@ a {
   width: 10px;
   height: 10px;
   border: 1px solid #17c0f0;
-  border-radius: 50px;
-  background-color: transparent;
+  border-radius: 25px;
   color: #17c0f0;
-}
-.secondary-nav .chip--selected {
-  background-color: #17c0f0;
 }
 .secondary-nav .chip__info {
   position: absolute;
@@ -10815,7 +10811,71 @@ a {
   visibility: visible;
   opacity: 1;
 }
+.secondary-nav .js-selected {
+  border: none;
+  background-color: #17c0f0;
+  -webkit-animation-name: pulse-init;
+  animation-name: pulse-init;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.secondary-nav .js-selected::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -2px;
+  left: -2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 25px;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #17c0f0;
+  }
+  100% {
+    box-shadow: 0 0 3px 1px #17c0f0;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #17c0f0;
+  }
+  100% {
+    box-shadow: 0 0 3px 1px #17c0f0;
+  }
+}
+@-webkit-keyframes pulse-init {
+  0% {
+    box-shadow: 0 0 0 0 #17c0f0;
+  }
+  100% {
+    box-shadow: 0 0 1px 1px #17c0f0;
+  }
+}
+@keyframes pulse-init {
+  0% {
+    box-shadow: 0 0 0 0 #17c0f0;
+  }
+  100% {
+    box-shadow: 0 0 1px 1px #17c0f0;
+  }
+}
 .social {
   position: absolute;
   left: 6%;
