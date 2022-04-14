@@ -2,6 +2,14 @@
 // * This file contains all styles related to the navigation of the site/application.
 // ----------------------------------------------------------------------------
 
+// ================MENU================
+// - 1. Navigation bloc
+// - 2. Navigation items
+// ====================================
+
+// - 1. Navigation bloc
+// --------------------------
+
 .nav {
   position: absolute;
   z-index: 3;
@@ -17,7 +25,8 @@
   transform: translateX(0px);
 }
 
-// = ========================
+// - 2. Navigation items
+// --------------------------
 
 .nav-list {
   list-style-type: none;

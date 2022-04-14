@@ -4,12 +4,16 @@
 
 .social {
   position: absolute;
-  left: 4%;
+  left: 6%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 370px;
+
+  @include sm {
+    display: none;
+  }
 
   &__paragraph {
     margin-bottom: 16px;

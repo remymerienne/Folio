@@ -2,6 +2,15 @@
 // * This file contains all styles related to the folio component.
 // ----------------------------------------------------------------------------
 
+// ================MENU================
+// - 1. Folio
+// - 2. Folio header
+// - 1. Folio navigation
+// ====================================
+
+// - 1. Folio
+// --------------------------
+
 .folio {
   display: flex;
   font-family: 'Montserrat', sans-serif;
@@ -25,7 +34,8 @@
   }
 }
 
-// = ========================
+// - 2. Folio header
+// --------------------------
 
 .folio-header {
   align-items: flex-end;
@@ -42,7 +52,8 @@
   opacity: 0.5;
 }
 
-// = ========================
+// - 3. Folio navigation
+// --------------------------
 
 .folio-nav {
   align-items: center;

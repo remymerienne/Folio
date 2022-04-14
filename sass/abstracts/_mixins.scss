@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// * This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+// ================MENU================
+// - 1. Media Queries home page
+// ====================================
+
+// - 1. Media Queries home page
+// --------------------------
+
+// /// Mixins Media Queries Extra-large (max 1284px)
+// /// @access public
+// /// @requires $breakpoints - Breakpoints map
+// @mixin xl {
+//   @media screen and (max-width: map-get($breakpoints, xl)) {
+//     @content;
+//   }
+// }
+
+// /// Mixins Media Queries Large (max 981px)
+// /// @access public
+// /// @requires $breakpoints - Breakpoints map
+// @mixin lg {
+//   @media screen and (max-width: map-get($breakpoints, lg)) {
+//     @content;
+//   }
+// }
+
+/// Mixins Media Queries Medium (max 768px)
+/// @access public
+/// @requires $breakpoints - Breakpoints map
+@mixin md {
+  @media screen and (max-width: map-get($breakpoints, md)) {
+    @content;
+  }
+}
+
+/// Mixins Media Queries Small (max 590px)
+/// @access public
+/// @requires $breakpoints - Breakpoints map
+@mixin sm {
+  @media screen and (max-width: map-get($breakpoints, sm)) {
+    @content;
+  }
+}
+
+/// Mixins Media Queries Small (max 500px)
+/// @access public
+/// @requires $breakpoints - Breakpoints map
+@mixin xs {
+  @media screen and (max-width: map-get($breakpoints, xs)) {
+    @content;
+  }
+}
+
+// /// Mixins Media Queries Small (max 451px)
+// /// @access public
+// /// @requires $breakpoints - Breakpoints map
+// @mixin nn {
+//   @media screen and (max-width: map-get($breakpoints, nn)) {
+//     @content;
+//   }
+// }
+
+// * End
+// * ------------------------

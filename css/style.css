@@ -10739,6 +10739,17 @@ a {
   font-weight: 700;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .information__h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .information__h1 {
+    margin: 0 40px 35px 40px;
+    font-size: 45px;
+  }
+}
 .information__h2 {
   height: 30px;
   margin-bottom: 35px;
@@ -10753,8 +10764,13 @@ a {
 }
 .information .button-block {
   display: flex;
-  -moz-column-gap: 20px;
-  column-gap: 25px;
+  gap: 25px;
+}
+@media screen and (max-width: 590px) {
+  .information .button-block {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .secondary-nav {
@@ -10763,6 +10779,11 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+@media screen and (max-width: 768px) {
+  .secondary-nav {
+    left: 92%;
+  }
 }
 .secondary-nav .chip {
   width: 10px;
@@ -10797,12 +10818,17 @@ a {
 
 .social {
   position: absolute;
-  left: 4%;
+  left: 6%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 370px;
+}
+@media screen and (max-width: 590px) {
+  .social {
+    display: none;
+  }
 }
 .social__paragraph {
   margin-bottom: 16px;
@@ -10868,6 +10894,11 @@ a {
   transition-property: background-color;
   transition-duration: 700ms;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 4%;
+  }
+}
 
 .js-header {
   background-color: #22323f;
@@ -10886,6 +10917,11 @@ a {
   transition-property: transform;
   transition-duration: 700ms;
 }
+@media screen and (max-width: 500px) {
+  .icons-box__lines {
+    font-size: 25px;
+  }
+}
 .icons-box__cross {
   position: absolute;
   margin-left: 1px;
@@ -10896,6 +10932,11 @@ a {
   transition-property: transform;
   transition-duration: 700ms;
   transition-delay: 100ms;
+}
+@media screen and (max-width: 500px) {
+  .icons-box__cross {
+    font-size: 32px;
+  }
 }
 
 .js-lines {
