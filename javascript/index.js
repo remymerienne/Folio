@@ -1,6 +1,6 @@
-const iconsBox = document.querySelector('div.icons-box');
-const lines = document.querySelector('i.icons-box__lines');
-const cross = document.querySelector('i.icons-box__cross');
+const iconsBox = document.querySelector('div.icon-box');
+const lines = document.querySelector('i.icon-box__lines');
+const cross = document.querySelector('i.icon-box__cross');
 const nav = document.querySelector('nav.nav');
 const header = document.querySelector('header.header');
 const folio = document.querySelector('header .folio-header');

@@ -2,14 +2,6 @@
 // * This file contains all styles related to the header of the site/application.
 // ----------------------------------------------------------------------------
 
-// ================MENU================
-// - 1. Header
-// - 2. Menu opening icons
-// ====================================
-
-// - 1. header
-// --------------------------
-
 .header {
   position: fixed;
   z-index: 2;
@@ -31,52 +23,6 @@
 
 .js-header {
   background-color: #22323f;
-}
-
-// - 2. Menu opening icons
-// --------------------------
-
-.icons-box {
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-
-  &__lines {
-    position: absolute;
-    color: #17c0f0;
-    font-size: 30px;
-    transform: rotate(0deg) scale(1);
-    transition-property: transform;
-    transition-duration: 700ms;
-
-    @include xs {
-      font-size: 25px;
-    }
-  }
-
-  &__cross {
-    position: absolute;
-    margin-left: 1px;
-    margin-top: -4px;
-    color: #17c0f0;
-    font-size: 38px;
-    transform: rotate(45deg) scale(0);
-    transition-property: transform;
-    transition-duration: 700ms;
-    transition-delay: 100ms;
-
-    @include xs {
-      font-size: 32px;
-    }
-  }
-}
-
-.js-lines {
-  transform: rotate(45deg) scale(0);
-}
-
-.js-cross {
-  transform: rotate(90deg) scale(1);
 }
 
 // * End

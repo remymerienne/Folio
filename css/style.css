@@ -10726,6 +10726,50 @@ a {
   margin-top: 12px;
 }
 
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.icon-box__lines {
+  position: absolute;
+  color: #17c0f0;
+  font-size: 30px;
+  transform: rotate(0deg) scale(1);
+  transition-property: transform;
+  transition-duration: 700ms;
+}
+@media screen and (max-width: 500px) {
+  .icon-box__lines {
+    font-size: 25px;
+  }
+}
+.icon-box__cross {
+  position: absolute;
+  color: #17c0f0;
+  font-size: 38px;
+  transform: rotate(45deg) scale(0);
+  transition-property: transform;
+  transition-duration: 700ms;
+  transition-delay: 100ms;
+}
+@media screen and (max-width: 500px) {
+  .icon-box__cross {
+    font-size: 32px;
+  }
+}
+
+.js-lines {
+  transform: rotate(45deg) scale(0);
+}
+
+.js-cross {
+  transform: rotate(90deg) scale(1);
+}
+
 .information {
   display: flex;
   flex-direction: column;
@@ -10962,49 +11006,6 @@ a {
 
 .js-header {
   background-color: #22323f;
-}
-
-.icons-box {
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-}
-.icons-box__lines {
-  position: absolute;
-  color: #17c0f0;
-  font-size: 30px;
-  transform: rotate(0deg) scale(1);
-  transition-property: transform;
-  transition-duration: 700ms;
-}
-@media screen and (max-width: 500px) {
-  .icons-box__lines {
-    font-size: 25px;
-  }
-}
-.icons-box__cross {
-  position: absolute;
-  margin-left: 1px;
-  margin-top: -4px;
-  color: #17c0f0;
-  font-size: 38px;
-  transform: rotate(45deg) scale(0);
-  transition-property: transform;
-  transition-duration: 700ms;
-  transition-delay: 100ms;
-}
-@media screen and (max-width: 500px) {
-  .icons-box__cross {
-    font-size: 32px;
-  }
-}
-
-.js-lines {
-  transform: rotate(45deg) scale(0);
-}
-
-.js-cross {
-  transform: rotate(90deg) scale(1);
 }
 
 .nav {

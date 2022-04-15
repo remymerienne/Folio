@@ -1,0 +1,50 @@
+// ----------------------------------------------------------------------------
+// * This file contains all styles related to the icon box menu component.
+// ----------------------------------------------------------------------------
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  &__lines {
+    position: absolute;
+    color: #17c0f0;
+    font-size: 30px;
+    transform: rotate(0deg) scale(1);
+    transition-property: transform;
+    transition-duration: 700ms;
+
+    @include xs {
+      font-size: 25px;
+    }
+  }
+
+  &__cross {
+    position: absolute;
+    color: #17c0f0;
+    font-size: 38px;
+    transform: rotate(45deg) scale(0);
+    transition-property: transform;
+    transition-duration: 700ms;
+    transition-delay: 100ms;
+
+    @include xs {
+      font-size: 32px;
+    }
+  }
+}
+
+.js-lines {
+  transform: rotate(45deg) scale(0);
+}
+
+.js-cross {
+  transform: rotate(90deg) scale(1);
+}
+
+// * End
+// * ------------------------
