@@ -1,33 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./css/style.css" />
-		<script src="https://kit.fontawesome.com/9bd8ff85e3.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<div class="container">
-			<div class="page">
-				<nav class="nav">
-					<div class="folio">
-						<p><span>F</span>olio</p>
-						<div class="dot"></div>
-					</div>
-					<div class="menu-icon">
-						<i class="fa-solid fa-bars"></i>
-					</div>
-				</nav>
-				<main class="main"></main>
-			</div>
-		</div>
-	</body>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+
+  <div class="wrap"></div>
+
+
+  <header class="header">
+    <div class="folio folio-header">
+      <p class="folio__text"><span class="folio__text-first">F</span>olio</p>
+      <div class="folio__dot folio-header__dot"></div>
+    </div>
+    <div class="icon-box">
+      <i class="icon-box__lines fa-solid fa-bars"></i>
+      <i class="icon-box__cross fa-solid fa-xmark"></i>
+    </div>
+  </header>
+
+
+  <nav class="nav">
+    <div class="folio folio-nav">
+      <p class="folio__text"><span class="folio__text-first">F</span>olio</p>
+      <div class="folio__dot folio-nav__dot"></div>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-list__item nav-list__first-item nav-list__item--selected">
+        <a href="#">
+          <i class="fa-solid fa-house-chimney nav-icon"></i>
+          Home
+        </a>
+      </li>
+      <li class="nav-list__item">
+        <a href="#">
+          <i class="fa-solid fa-user nav-icon"></i>
+          About
+        </a>
+      </li>
+      <li class="nav-list__item">
+        <a href="#">
+          <i class="fa-solid fa-list nav-icon"></i>
+          Services
+        </a>
+      </li>
+      <li class="nav-list__item">
+        <a href="#">
+          <i class="fa-solid fa-graduation-cap nav-icon"></i>
+          Resume
+        </a>
+      </li>
+      <li class="nav-list__item">
+        <a href="#">
+          <i class="fa-solid fa-suitcase nav-icon"></i>
+          Portfolio
+        </a>
+      </li>
+      <li class="nav-list__item">
+        <a href="#">
+          <i class="fa-solid fa-newspaper nav-icon"></i>
+          Blog
+        </a>
+      </li>
+      <li class="nav-list__item">
+        <a href="#">
+          <i class="fa-solid fa-location-dot nav-icon"></i>
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <main class="home">
+
+
+    <div class="social">
+      <p class="social__paragraph">FOLLOW ME</p>
+      <div class="social__line"></div>
+      <ul class="social__list">
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="information">
+      <h1 class="information__h1">Rémy Merienne</h1>
+      <h2 class="information__h2"></h2>
+      <div class="button-block">
+        <div class="button">Hire Me</div>
+        <div class="button button--active">Download CV</div>
+      </div>
+    </div>
+
+
+    <div class="secondary-nav">
+      <a href="#">
+        <div class="chip js-selected"><span class="chip__info">Home</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">About</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">Services</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">Resume</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">Portfolio</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">Blog</span></div>
+      </a>
+      <a href="#">
+        <div class="chip"><span class="chip__info">Contact</span></div>
+      </a>
+    </div>
+
+
+  </main>
+
+
+  <script type="module" src="./javascript/index.js"></script>
+
+
+</body>
+
 </html>

@@ -1,0 +1,19 @@
+// ----------------------------------------------------------------------------
+// * This file contains styles that are specific to the home page.
+// ----------------------------------------------------------------------------
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(38, 51, 64, 0.5);
+  background-image: url('../images/sunset.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+// * End
+// * ------------------------

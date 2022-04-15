@@ -1,0 +1,70 @@
+// ----------------------------------------------------------------------------
+// * This file contains all styles related to the folio component.
+// ----------------------------------------------------------------------------
+
+// ================MENU================
+// - 1. Folio
+// - 2. Folio header
+// - 1. Folio navigation
+// ====================================
+
+// - 1. Folio
+// --------------------------
+
+.folio {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+
+  &__text {
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    &-first {
+      color: #17c0f0;
+    }
+  }
+
+  &__dot {
+    width: 5px;
+    height: 5px;
+    margin-left: 5px;
+    background-color: #17c0f0;
+  }
+}
+
+// - 2. Folio header
+// --------------------------
+
+.folio-header {
+  align-items: flex-end;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 700ms;
+
+  &__dot {
+    margin-bottom: 5px;
+  }
+}
+
+.js-folio {
+  opacity: 0.5;
+}
+
+// - 3. Folio navigation
+// --------------------------
+
+.folio-nav {
+  align-items: center;
+  justify-content: center;
+  height: 170px;
+  border-bottom: 1px solid #263340;
+
+  &__dot {
+    margin-top: 12px;
+  }
+}
+
+// * End
+// * ------------------------

@@ -1,5 +1,31 @@
 @charset "UTF-8";
 
-@import 'normalize';
-@import 'base';
-@import 'first';
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+// @import 'abstracts/placeholders';
+
+// vendors
+@import 'vendors/normalize';
+@import 'vendors/fontawesome';
+
+// base
+@import 'base/base';
+@import 'base/fonts';
+// @import 'base/typography';
+
+// components
+@import 'components/buttons';
+@import 'components/folio';
+@import 'components/icon-box';
+@import 'components/information';
+@import 'components/secondary-navigation';
+@import 'components/social';
+@import 'components/wrap';
+
+// layout
+@import 'layout/header';
+@import 'layout/navigation';
+
+// pages
+@import 'pages/home';

@@ -1,0 +1,121 @@
+// ----------------------------------------------------------------------------
+// * This file contains styles related to the secondary navigation component.
+// ----------------------------------------------------------------------------
+
+.secondary-nav {
+  position: absolute;
+  left: 97%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include md {
+    left: 92%;
+  }
+
+  .chip {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #17c0f0;
+    border-radius: 25px;
+    color: #17c0f0;
+
+    &__info {
+      position: absolute;
+      right: 20px;
+      margin-top: -5px;
+      visibility: hidden;
+      opacity: 0;
+      font-family: 'Open Sans', sans-serif;
+      white-space: nowrap;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      transition-property: visibility, opacity;
+      transition-duration: 700ms;
+    }
+
+    &:hover .chip__info {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .js-selected {
+    border: none;
+    background-color: #17c0f0;
+    -webkit-animation-name: pulse-init;
+    animation-name: pulse-init;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: -2px;
+      left: -2px;
+      width: 14px;
+      height: 14px;
+      border-radius: 25px;
+      -webkit-animation-name: pulse;
+      animation-name: pulse;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      -webkit-animation-delay: 300ms;
+      animation-delay: 300ms;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #17c0f0;
+  }
+
+  100% {
+    box-shadow: 0 0 3px 1px #17c0f0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #17c0f0;
+  }
+
+  100% {
+    box-shadow: 0 0 3px 1px #17c0f0;
+  }
+}
+
+@-webkit-keyframes pulse-init {
+  0% {
+    box-shadow: 0 0 0 0 #17c0f0;
+  }
+
+  100% {
+    box-shadow: 0 0 1px 1px #17c0f0;
+  }
+}
+
+@keyframes pulse-init {
+  0% {
+    box-shadow: 0 0 0 0 #17c0f0;
+  }
+
+  100% {
+    box-shadow: 0 0 1px 1px #17c0f0;
+  }
+}
+
+// * End
+// * -------------------------

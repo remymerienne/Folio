@@ -1,0 +1,54 @@
+// ----------------------------------------------------------------------------
+// * This file contains styles related to the social component.
+// ----------------------------------------------------------------------------
+
+.social {
+  position: absolute;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 370px;
+
+  @include sm {
+    display: none;
+  }
+
+  &__paragraph {
+    margin-bottom: 16px;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: white;
+  }
+
+  &__line {
+    width: 2px;
+    height: 70px;
+    background-color: #17c0f0;
+  }
+
+  &__list {
+    list-style-type: none;
+    text-align: center;
+
+    i {
+      margin-top: 16px;
+      color: white;
+      font-size: 16px;
+      transition: color 700ms;
+
+      &:hover {
+        color: #17c0f0;
+      }
+    }
+  }
+}
+
+// * End
+// * ------------------------
