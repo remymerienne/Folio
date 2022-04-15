@@ -12,5 +12,7 @@ To Do List :
 - variables font et couleur !!!
 - regarder pour des place holder
 - supprimer typo ?
+- Faire les liens sociaux
+- Download cv
 
 *******************************************************************************
