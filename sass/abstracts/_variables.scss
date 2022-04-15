@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// * This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// ================MENU================
+// - 1. Lengths
+// - 2. Colors
+// - 3. Fonts
+// - 4. Breakpoints maps
+// ====================================
+
+// - 1. Lengths
+// --------------------------
+
+/// Page maximum width
+/// @type Length
+// $page-max-width: 1440px;
+
+// - 2. Colors
+// --------------------------
+
+/// Primary color
+/// @type Color
+// $primary-color: #901c1c;
+
+// - 3. Fonts
+// --------------------------
+
+/// Font family
+/// @type List
+// $font-stack: ('DM Sans', sans-serif);
+
+// - 4. Breakpoints maps
+// --------------------------
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  // 'xl': 1410px,
+  // 'lg': 1290px,
+  'md': 768px,
+  'sm': 590px,
+  'xs': 500px,
+  // 'nn': 451px
+);
+
+// * End
+// * ------------------------

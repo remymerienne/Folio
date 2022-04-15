@@ -1,24 +1,26 @@
 {
-	"name": "folio",
-	"version": "1.0.0",
-	"description": "Intégration d'un porte folio - Animations - Vanilla",
-	"main": "index.js",
-	"scripts": {
-		"sass": "sass sass/main.scss css/style.css --watch"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/remymerienne/Folio.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/remymerienne/Folio/issues"
-	},
-	"homepage": "https://github.com/remymerienne/Folio#readme",
-	"devDependencies": {
-		"eslint": "^8.13.0",
-		"sass": "^1.49.9"
-	}
+  "name": "folio",
+  "version": "1.0.0",
+  "description": "Intégration d'un porte folio - Animations - Vanilla",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/main.scss css/style.css --watch",
+    "purge": "purgecss --css ./css/style.css --content ./index.html ./javascript/index.js --output ./dist -font -keyframes",
+    "server": "live-server --port=5503 --open=\"./index.html\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remymerienne/Folio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remymerienne/Folio/issues"
+  },
+  "homepage": "https://github.com/remymerienne/Folio#readme",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "sass": "^1.49.9"
+  }
 }
