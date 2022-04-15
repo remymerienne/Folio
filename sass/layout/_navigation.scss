@@ -31,19 +31,25 @@
 .nav-list {
   list-style-type: none;
   font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
 
   &__item {
     display: flex;
     align-items: center;
-    height: 8.2vh;
+    // height: 8.2vh;
+    height: 60px;
     padding-left: 30px;
     border-top: 1px solid #374757;
     border-bottom: 1px solid #263340;
-    color: white;
-    font-size: 14px;
-    letter-spacing: 2px;
     transition-property: background-color;
     transition-duration: 700ms;
+
+    @include xs {
+      height: 50px;
+    }
 
     &:hover {
       background-color: #263340;

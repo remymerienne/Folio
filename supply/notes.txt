@@ -6,6 +6,11 @@ https://www.templatemonsterpreview.com/fr/demo/146486.html
 
 *******************************************************************************
 
-background original du main => rgba(39, 37, 37, 0.7)
+To Do List :
+------------
+- background original du main => rgba(39, 37, 37, 0.7)
+- variables font et couleur !!!
+- regarder pour des place holder
+- supprimer typo ?
 
-
+*******************************************************************************

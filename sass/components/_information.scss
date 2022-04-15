@@ -13,6 +13,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     font-weight: 700;
+    letter-spacing: 1.6px;
     text-align: center;
 
     @include md {
@@ -32,7 +33,7 @@
     color: #c3c0c0;
     font-size: 22px;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 0.3px;
 
     .js-emphasis {
       color: #17c0f0;

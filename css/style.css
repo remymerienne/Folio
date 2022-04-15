@@ -10656,6 +10656,46 @@ a {
   cursor: pointer;
 }
 
+/* open-sans-500 - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/open-sans-v28-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v28-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v28-latin-500.woff2") format("woff2"), url("../fonts/open-sans-v28-latin-500.woff") format("woff"), url("../fonts/open-sans-v28-latin-500.ttf") format("truetype"), url("../fonts/open-sans-v28-latin-500.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v28-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v28-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v28-latin-600.woff2") format("woff2"), url("../fonts/open-sans-v28-latin-600.woff") format("woff"), url("../fonts/open-sans-v28-latin-600.ttf") format("truetype"), url("../fonts/open-sans-v28-latin-600.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v23-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v23-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v23-latin-600.woff2") format("woff2"), url("../fonts/montserrat-v23-latin-600.woff") format("woff"), url("../fonts/montserrat-v23-latin-600.ttf") format("truetype"), url("../fonts/montserrat-v23-latin-600.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v23-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v23-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v23-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v23-latin-700.woff") format("woff"), url("../fonts/montserrat-v23-latin-700.ttf") format("truetype"), url("../fonts/montserrat-v23-latin-700.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
 .button {
   display: flex;
   align-items: center;
@@ -10667,8 +10707,8 @@ a {
   font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-weight: 500;
+  letter-spacing: 1px;
   cursor: pointer;
 }
 .button--active {
@@ -10781,6 +10821,7 @@ a {
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
   font-weight: 700;
+  letter-spacing: 1.6px;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -10801,7 +10842,7 @@ a {
   color: #c3c0c0;
   font-size: 22px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 0.3px;
 }
 .information__h2 .js-emphasis {
   color: #17c0f0;
@@ -10846,8 +10887,8 @@ a {
   white-space: nowrap;
   color: white;
   font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.3px;
+  font-weight: 500;
+  letter-spacing: 1px;
   transition-property: visibility, opacity;
   transition-duration: 700ms;
 }
@@ -10922,7 +10963,7 @@ a {
 }
 .social {
   position: absolute;
-  left: 6%;
+  left: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10940,9 +10981,9 @@ a {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   color: white;
 }
 .social__line {
@@ -11026,19 +11067,25 @@ a {
 .nav-list {
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 .nav-list__item {
   display: flex;
   align-items: center;
-  height: 8.2vh;
+  height: 60px;
   padding-left: 30px;
   border-top: 1px solid #374757;
   border-bottom: 1px solid #263340;
-  color: white;
-  font-size: 14px;
-  letter-spacing: 2px;
   transition-property: background-color;
   transition-duration: 700ms;
+}
+@media screen and (max-width: 500px) {
+  .nav-list__item {
+    height: 50px;
+  }
 }
 .nav-list__item:hover {
   background-color: #263340;

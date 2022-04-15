@@ -20,6 +20,14 @@
       {
         "splitTerminals": [
           {
+            "name": "Server",
+            "commands": ["npm run server"]
+          }
+        ]
+      },
+      {
+        "splitTerminals": [
+          {
             "name": "Git"
           }
         ]
