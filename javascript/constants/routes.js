@@ -14,6 +14,3 @@ export const render = (pathname) => {
       return HomeUI();
   }
 };
-
-// Hosting: '/Folio/dist/',
-// Home: '/Folio/dist/index.html',
