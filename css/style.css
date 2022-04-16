@@ -10861,6 +10861,7 @@ a {
 .secondary-nav {
   position: absolute;
   left: 97%;
+  top: 45vh;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -11128,7 +11129,7 @@ a {
   align-items: center;
   height: 100vh;
   background-color: rgba(38, 51, 64, 0.5);
-  background-image: url("../images/sunset.jpg");
+  background-image: url("../images/sunset-lossy.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

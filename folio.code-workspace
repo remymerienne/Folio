@@ -4,10 +4,16 @@
       "name": "Folio",
       "path": "./"
     }
+    // {
+    //   "path": "../Prime-app"
+    // }
   ],
   "settings": {
     "window.zoomLevel": -1,
-    "liveServer.settings.port": 5502,
+    "liveServer.settings.port": 5500,
+    // "liveServer.settings.root": "/",
+    // "liveServer.settings.file": "./rem.html",
+    "liveServer.settings.multiRootWorkspaceName": "Folio",
     "restoreTerminals.terminals": [
       {
         "splitTerminals": [
