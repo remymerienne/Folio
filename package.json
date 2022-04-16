@@ -2,11 +2,13 @@
   "name": "folio",
   "version": "1.0.0",
   "description": "Intégration d'un porte folio - Animations - Vanilla",
-  "main": "index.js",
+  "main": "router.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "sass": "sass sass/main.scss css/style.css --watch",
-    "purge": "purgecss --css ./css/style.css --content ./index.html ./javascript/index.js --output ./dist -font -keyframes",
-    "server": "live-server --port=5503 --open=\"./index.html\""
+    "purge": "purgecss --css ./css/style.css --content ./dist/index.html ./dist/index.bundle.js --output ./dist -font -keyframes",
+    "server": "live-server --port=5510 --open=\"./index.html\"",
+    "server-dist": "live-server --port=5511 --open=\"./dist/index.html\""
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,13 @@
   },
   "homepage": "https://github.com/remymerienne/Folio#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-arrow-functions": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
     "eslint": "^8.13.0",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
   }
 }

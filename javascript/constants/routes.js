@@ -2,8 +2,8 @@ import BasisUI from '../views/BasisUI.js';
 import HomeUI from '../views/HomeUI.js';
 
 export const ROUTES_PATH = {
-  Hosting: '/',
-  Home: '/index.html',
+  Hosting: '/Folio/dist/',
+  Home: '/Folio/dist/index.html',
 };
 
 export const render = (pathname) => {
@@ -15,5 +15,5 @@ export const render = (pathname) => {
   }
 };
 
-// Hosting: '/Folio/',
-// Home: '/Folio/index.html',
+// Hosting: '/Folio/dist/',
+// Home: '/Folio/dist/index.html',
