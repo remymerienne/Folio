@@ -19,13 +19,13 @@ export default () => {
       </div>
       <ul class="nav-list">
         <li class="nav-list__item nav-list__first-item nav-list__item--selected">
-          <a href="#">
+          <a href="index.html" data-link>
             <i class="fa-solid fa-house-chimney nav-icon"></i>
             Home
           </a>
         </li>
         <li class="nav-list__item">
-          <a href="#">
+          <a href="index.html#about">
             <i class="fa-solid fa-user nav-icon"></i>
             About
           </a>
@@ -63,10 +63,10 @@ export default () => {
       </ul>
     </nav>
     <div class="secondary-nav">
-      <a href="#">
-        <div class="chip js-selected"><span class="chip__info">Home</span></div>
+      <a href="index.html">
+        <div data-link-div class="chip js-selected"><span class="chip__info">Home</span></div>
       </a>
-      <a href="#">
+      <a href="index.html#about">
         <div class="chip"><span class="chip__info">About</span></div>
       </a>
       <a href="#">
