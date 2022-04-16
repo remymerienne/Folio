@@ -3,10 +3,10 @@
     {
       "name": "Folio",
       "path": "./"
-    },
-    {
-      "path": "../Prime-app"
     }
+    // {
+    //   "path": "../Prime-app"
+    // }
   ],
   "settings": {
     "window.zoomLevel": -1,

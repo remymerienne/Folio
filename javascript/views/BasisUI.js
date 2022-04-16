@@ -1,6 +1,7 @@
 export default () => {
   return `
     <div class="wrap"></div>
+
     <header class="header">
       <div class="folio folio-header">
         <p class="folio__text"><span class="folio__text-first">F</span>olio</p>
