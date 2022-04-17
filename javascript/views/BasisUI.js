@@ -12,6 +12,7 @@ export default () => {
         <i class="icon-box__cross fa-solid fa-xmark"></i>
       </div>
     </header>
+
     <nav class="nav">
       <div class="folio folio-nav">
         <p class="folio__text"><span class="folio__text-first">F</span>olio</p>
@@ -62,9 +63,10 @@ export default () => {
         </li>
       </ul>
     </nav>
+    
     <div class="secondary-nav">
       <a href="index.html">
-        <div data-link-div class="chip js-selected"><span class="chip__info">Home</span></div>
+        <div data-link-div class="chip"><span class="chip__info">Home</span></div>
       </a>
       <a href="index.html#about">
         <div class="chip"><span class="chip__info">About</span></div>
