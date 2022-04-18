@@ -5,6 +5,7 @@
 .about {
   display: flex;
   justify-content: center;
+  // flex-wrap: wrap;
   height: 100vh;
   padding-top: 105px;
   -moz-column-gap: 25px;
@@ -52,6 +53,11 @@
       letter-spacing: 0.5px;
     }
 
+    .bloc-text {
+      padding-bottom: 35px;
+      border-bottom: 1px solid #263340;
+    }
+
     &__p {
       margin-top: 20px;
       font-family: 'Open Sans', sans-serif;
@@ -60,6 +66,34 @@
       font-size: 14px;
       line-height: 1.8;
       letter-spacing: 0.3px;
+    }
+
+    &__detail {
+      display: flex;
+      justify-content: center;
+      -moz-column-gap: 65px;
+      column-gap: 65px;
+      padding-top: 35px;
+      border-top: 1px solid #374757;
+
+      li {
+        margin-bottom: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.6px;
+        color: #c7c5c7;
+
+        .blue-text {
+          color: #17c0f0;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .button-about {
+      margin-left: 25px;
+      margin-top: 25px;
     }
   }
 }

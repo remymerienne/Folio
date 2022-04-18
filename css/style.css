@@ -10656,6 +10656,20 @@ a {
   cursor: pointer;
 }
 
+ul {
+  list-style-type: none;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v28-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v28-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v28-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v28-latin-regular.woff") format("woff"), url("../fonts/open-sans-v28-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v28-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
 /* open-sans-500 - latin */
 @font-face {
   font-family: "Open Sans";
@@ -11066,7 +11080,6 @@ a {
 }
 
 .nav-list {
-  list-style-type: none;
   font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 14px;
@@ -11181,6 +11194,10 @@ a {
   font-size: 16px;
   letter-spacing: 0.5px;
 }
+.about-info .bloc-text {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #263340;
+}
 .about-info__p {
   margin-top: 20px;
   font-family: "Open Sans", sans-serif;
@@ -11189,6 +11206,30 @@ a {
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: 0.3px;
+}
+.about-info__detail {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 65px;
+  column-gap: 65px;
+  padding-top: 35px;
+  border-top: 1px solid #374757;
+}
+.about-info__detail li {
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  color: #c7c5c7;
+}
+.about-info__detail li .blue-text {
+  color: #17c0f0;
+  font-weight: 600;
+}
+.about-info .button-about {
+  margin-left: 25px;
+  margin-top: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
