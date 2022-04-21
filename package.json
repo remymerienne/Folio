@@ -2,13 +2,12 @@
   "name": "folio",
   "version": "1.0.0",
   "description": "Intégration d'un porte folio - Animations - Vanilla",
-  "main": "router.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "sass": "sass sass/main.scss css/style.css --watch",
-    "purge": "purgecss --css ./css/style.css --content ./dist/index.html ./dist/index.bundle.js --output ./dist -font -keyframes",
-    "server": "live-server --port=5510 --open=\"./index.html\"",
-    "server-dist": "live-server --port=5511 --open=\"./dist/index.html\""
+    "purge": "purgecss --css ./css/style.css --content ./index.html ./dist/index.js --output ./dist -font -keyframes",
+    "server": "live-server --port=5510 --open=\"./index.html\""
   },
   "repository": {
     "type": "git",
