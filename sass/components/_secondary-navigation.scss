@@ -46,13 +46,9 @@
   .js-selected {
     border: none;
     background-color: #17c0f0;
-    -webkit-animation-name: pulse-init;
     animation-name: pulse-init;
-    -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 
     &::after {
@@ -64,15 +60,10 @@
       width: 14px;
       height: 14px;
       border-radius: 25px;
-      -webkit-animation-name: pulse;
       animation-name: pulse;
-      -webkit-animation-duration: 1s;
       animation-duration: 1s;
-      -webkit-animation-timing-function: ease-out;
       animation-timing-function: ease-out;
-      -webkit-animation-delay: 300ms;
       animation-delay: 300ms;
-      -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
     }
   }
