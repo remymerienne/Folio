@@ -7,7 +7,7 @@ export default () => {
       <section class="about-info">
         <header>
           <h1 class="about-info__h1">About me</h1>
-          <div class="chip js-selected"></div>
+          <div class="chip pulse-effect"></div>
           <h2 class="about-info__h2">I am Rémy Merienne</h2>
           <h3 class="about-info__h3">I am a Front-End Web Developer</h3>
         </header>

@@ -2,6 +2,7 @@ export default class {
   constructor() {
     this.typeWritterEffect();
     this.pulseEffect();
+    this.selectNavItem();
   }
 
   typeWritterEffect() {
@@ -46,13 +47,18 @@ export default class {
   }
 
   pulseEffect() {
-    const chipSelected = document.querySelector('div.chip');
-    chipSelected.classList.add('js-selected');
-    // resetPulseEffect() {
-    //   const allChip = document.querySelectorAll('div.chip');
-    //   allChip.forEach((e) => {
-    //     e.classList.remove('js-selected');
-    //   });
-    // }
+    const allChip = document.querySelectorAll('div.chip');
+    allChip.forEach((e) => {
+      e.classList.remove('js-selected');
+    });
+    allChip[0].classList.add('js-selected');
+  }
+
+  selectNavItem() {
+    const allLink = document.querySelectorAll('li.nav-list__item');
+    allLink.forEach((e) => {
+      e.classList.remove('js-navItemSelected');
+    });
+    allLink[0].classList.add('js-navItemSelected');
   }
 }

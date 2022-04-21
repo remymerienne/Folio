@@ -1,7 +1,6 @@
 export default () => {
   return `
     <div class="wrap"></div>
-
     <header class="header">
       <div class="folio folio-header">
         <p class="folio__text"><span class="folio__text-first">F</span>olio</p>
@@ -19,7 +18,7 @@ export default () => {
         <div class="folio__dot folio-nav__dot"></div>
       </div>
       <ul class="nav-list">
-        <li class="nav-list__item nav-list__first-item nav-list__item--selected">
+        <li class="nav-list__item">
           <a href="index.html" data-link>
             <i class="fa-solid fa-house-chimney nav-icon"></i>
             Home

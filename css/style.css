@@ -11032,8 +11032,8 @@ ul {
 }
 
 .nav-list {
-  font-family: "Open Sans", sans-serif;
   color: white;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -11056,11 +11056,9 @@ ul {
 .nav-list__item:hover {
   background-color: #263340;
 }
-.nav-list__item--selected {
-  color: #17c0f0;
-}
-.nav-list__first-item {
+.nav-list .js-navItemSelected {
   box-shadow: inset 0px 15px 15px -14px #263340;
+  color: #17c0f0;
 }
 .nav-list .nav-icon {
   padding-bottom: 3px;
@@ -11198,7 +11196,7 @@ ul {
   border-radius: 25px;
   color: #17c0f0;
 }
-.about-info .js-selected {
+.about-info .pulse-effect {
   border: none;
   background-color: #17c0f0;
   -webkit-animation-name: pulse-init;
@@ -11210,7 +11208,7 @@ ul {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-.about-info .js-selected::after {
+.about-info .pulse-effect::after {
   content: "";
   display: block;
   position: relative;

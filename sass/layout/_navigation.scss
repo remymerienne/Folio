@@ -29,8 +29,8 @@
 // --------------------------
 
 .nav-list {
-  font-family: 'Open Sans', sans-serif;
   color: white;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -53,13 +53,11 @@
     &:hover {
       background-color: #263340;
     }
-    &--selected {
-      color: #17c0f0;
-    }
   }
 
-  &__first-item {
+  .js-navItemSelected {
     box-shadow: inset 0px 15px 15px -14px #263340;
+    color: #17c0f0;
   }
 
   .nav-icon {

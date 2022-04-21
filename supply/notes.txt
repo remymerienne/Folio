@@ -14,10 +14,7 @@ To Do List :
 - organiser les typo ?
 - Faire les liens sociaux
 - Download cv
-- revoire structure des pages home et about
-- faire le soulignement du titre h1 de la page about
 - gérer le clignotement du menu secondaire
 - finir encadrement de la photo de la page about
-- intégration en components de la page about
 
 *******************************************************************************
