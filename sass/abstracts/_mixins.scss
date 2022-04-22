@@ -18,14 +18,14 @@
 //   }
 // }
 
-// /// Mixins Media Queries Large (max 981px)
-// /// @access public
-// /// @requires $breakpoints - Breakpoints map
-// @mixin lg {
-//   @media screen and (max-width: map-get($breakpoints, lg)) {
-//     @content;
-//   }
-// }
+/// Mixins Media Queries Large (max 1168px)
+/// @access public
+/// @requires $breakpoints - Breakpoints map
+@mixin lg {
+  @media screen and (max-width: map-get($breakpoints, lg)) {
+    @content;
+  }
+}
 
 /// Mixins Media Queries Medium (max 768px)
 /// @access public
