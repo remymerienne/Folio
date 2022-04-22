@@ -11031,6 +11031,8 @@ ul {
 }
 .nav-list .js-navItemSelected {
   box-shadow: inset 0px 15px 15px -14px #263340;
+}
+.nav-list .js-navItemSelected a {
   color: #17c0f0;
 }
 .nav-list .nav-icon {

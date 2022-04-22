@@ -57,7 +57,9 @@
 
   .js-navItemSelected {
     box-shadow: inset 0px 15px 15px -14px #263340;
-    color: #17c0f0;
+    a {
+      color: #17c0f0;
+    }
   }
 
   .nav-icon {

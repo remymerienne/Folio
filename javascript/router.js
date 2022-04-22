@@ -11,11 +11,10 @@ const router = () => {
   if (currentPath === ROUTES_PATH.About) new About();
 };
 
-const basis = document.getElementById('basis');
-basis.innerHTML = render('basis');
-new Basis();
-
 document.addEventListener('DOMContentLoaded', () => {
+  const basis = document.getElementById('basis');
+  basis.innerHTML = render('basis');
+  new Basis();
   document.body.addEventListener('click', (e) => {
     if (e.target.matches('[data-link]')) {
       e.preventDefault();
