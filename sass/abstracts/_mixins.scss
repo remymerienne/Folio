@@ -27,6 +27,15 @@
   }
 }
 
+/// Mixins Media Queries Medium Large (max 800px)
+/// @access public
+/// @requires $breakpoints - Breakpoints map
+@mixin md-l {
+  @media screen and (max-width: map-get($breakpoints, md-l)) {
+    @content;
+  }
+}
+
 /// Mixins Media Queries Medium (max 768px)
 /// @access public
 /// @requires $breakpoints - Breakpoints map

@@ -5,7 +5,6 @@
 .about {
   display: flex;
   justify-content: center;
-  // flex-wrap: wrap;
   height: 100vh;
   padding-right: 60px;
   padding-top: 105px;
@@ -16,12 +15,21 @@
     height: initial;
   }
 
+  @include md-l {
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+
+  @include sm {
+    padding-top: 90px;
+  }
+
   &-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 440px;
-    min-width: 440px;
+    min-width: 380px;
     height: 530px;
     margin-left: 20px;
     background: linear-gradient(
@@ -31,16 +39,41 @@
     );
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
 
+    @include md-l {
+      margin: 0;
+    }
+    @include sm {
+      min-width: 320px;
+    }
+    @include xs {
+      min-width: 320px;
+      height: 470px;
+    }
+
     img {
       width: 96%;
-      min-width: 400px;
+      min-width: 340px;
       height: 96.5%;
       object-fit: cover;
+
+      @include sm {
+        min-width: 280px;
+      }
     }
   }
 
   &-info {
     width: 680px;
+
+    @include md-l {
+      margin-left: 30px;
+      padding-right: 30px;
+    }
+
+    @include sm {
+      margin: 0 17px;
+      padding: 0;
+    }
 
     &__h1 {
       font-family: 'Montserrat', sans-serif;
@@ -59,9 +92,11 @@
         height: 1px;
         background: transparent
           linear-gradient(to right, transparent, #1cb8ee, transparent);
-        // background: transparent
-        //   linear-gradient(to right, transparent, #1cb8ee, transparent) repeat
-        //   scroll 0 0;
+      }
+
+      @include md-l {
+        text-align: center;
+        margin: 35px;
       }
     }
 
@@ -74,6 +109,11 @@
       border: 1px solid #17c0f0;
       border-radius: 25px;
       color: #17c0f0;
+
+      @include md-l {
+        left: 50%;
+        top: -30px;
+      }
     }
 
     .pulse-effect {
@@ -108,6 +148,10 @@
       font-weight: 600;
       font-size: 31px;
       letter-spacing: 0.3px;
+
+      @include xs {
+        font-size: 25px;
+      }
     }
 
     &__h3 {
@@ -120,9 +164,12 @@
     }
 
     .bloc-text {
-      // padding-bottom: 35px;
       padding-bottom: 4vh;
       border-bottom: 1px solid #263340;
+
+      @include md-l {
+        padding-bottom: 2vh;
+      }
     }
 
     &__p {
@@ -139,13 +186,16 @@
       display: flex;
       justify-content: center;
       column-gap: 65px;
-      // padding-top: 35px;
       padding-top: 4vh;
       border-top: 1px solid #374757;
 
       @include lg {
         flex-wrap: wrap;
         justify-content: flex-start;
+      }
+
+      @include md-l {
+        padding-top: 2vh;
       }
 
       li {
@@ -166,9 +216,14 @@
     .button-about {
       margin-left: 25px;
       margin-top: 25px;
+
       @include lg {
         margin-bottom: 40px;
         margin-left: 0;
+      }
+
+      @include md-l {
+        margin: 40px auto;
       }
     }
   }

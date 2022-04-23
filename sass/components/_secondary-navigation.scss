@@ -10,8 +10,12 @@
   flex-direction: column;
   gap: 15px;
 
-  @include md {
+  @include md-l {
     left: 92%;
+  }
+
+  @include sm {
+    display: none;
   }
 
   .chip {
