@@ -10,9 +10,11 @@ To Do List :
 ------------
 - background original du main => rgba(39, 37, 37, 0.7)
 - variables font et couleur !!!
-- regarder pour des place holder
-- supprimer typo ?
+- regarder pour des placeholder
+- organiser les typo ?
 - Faire les liens sociaux
 - Download cv
+- gérer le clignotement du menu secondaire
+- finir encadrement de la photo de la page about
 
 *******************************************************************************

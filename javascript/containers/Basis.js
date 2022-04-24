@@ -2,6 +2,7 @@ export default class {
   constructor() {
     this.handleCLickMenu();
   }
+
   handleCLickMenu() {
     const iconsBox = document.querySelector('div.icon-box');
     const lines = document.querySelector('i.icon-box__lines');

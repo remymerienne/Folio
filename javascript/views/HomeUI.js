@@ -1,6 +1,7 @@
 export default () => {
   return `
     <main class="home">
+
       <div class="social">
         <p class="social__paragraph">FOLLOW ME</p>
         <div class="social__line"></div>
@@ -32,14 +33,16 @@ export default () => {
           </li>
         </ul>
       </div>
-      <div class="information">
+
+      <section class="information">
         <h1 class="information__h1">Rémy Merienne</h1>
         <h2 class="information__h2"></h2>
         <div class="button-block">
           <div class="button">Hire Me</div>
           <div class="button button--active">Download CV</div>
         </div>
-      </div>
+      </section>
+      
     </main>
   `;
 };
