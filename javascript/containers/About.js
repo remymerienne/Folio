@@ -2,6 +2,7 @@ export default class {
   constructor() {
     this.pulseEffect();
     this.selectNavItem();
+    this.hideSecondaryNav();
   }
 
   pulseEffect() {
@@ -18,5 +19,12 @@ export default class {
       e.classList.remove('js-navItemSelected');
     });
     allLink[1].classList.add('js-navItemSelected');
+  }
+
+  hideSecondaryNav() {
+    const SecondaryNav = document.querySelector('div.secondary-nav');
+    if (window.matchMedia('(max-width: 590px)').matches) {
+      SecondaryNav.style.display = 'none';
+    }
   }
 }

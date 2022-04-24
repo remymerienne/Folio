@@ -10857,11 +10857,6 @@ html {
     left: 92%;
   }
 }
-@media screen and (max-width: 590px) {
-  .secondary-nav {
-    display: none;
-  }
-}
 .secondary-nav .chip {
   width: 10px;
   height: 10px;
@@ -11179,7 +11174,6 @@ html {
 }
 @media screen and (max-width: 500px) {
   .about-img {
-    min-width: 320px;
     height: 470px;
   }
 }

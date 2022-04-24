@@ -42,11 +42,12 @@
     @include md-l {
       margin: 0;
     }
+
     @include sm {
       min-width: 320px;
     }
+
     @include xs {
-      min-width: 320px;
       height: 470px;
     }
 
