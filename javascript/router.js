@@ -1,19 +1,31 @@
 import Basis from './containers/Basis.js';
 import Home from './containers/Home.js';
+import About from './containers/About.js';
 import { ROUTES_PATH, render } from './constants/routes.js';
 
-export const router = () => {
-  const currentPath =
-    ROUTES_PATH.Hosting + window.location.href.split('/').pop();
-  const basis = document.getElementById('basis');
+const router = () => {
+  const currentPath = '/' + window.location.href.split('/').pop();
   const root = document.getElementById('root');
-  basis.innerHTML = render(ROUTES_PATH.Hosting);
-  new Basis();
   root.innerHTML = render(currentPath);
   if (currentPath === ROUTES_PATH.Home) new Home();
+  if (currentPath === ROUTES_PATH.About) new About();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+  const basis = document.getElementById('basis');
+  basis.innerHTML = render('basis');
+  new Basis();
+  document.body.addEventListener('click', (e) => {
+    if (e.target.matches('[data-link]')) {
+      e.preventDefault();
+      history.pushState(null, null, e.target.href);
+      router();
+    } else if (e.target.matches('[data-link-div]')) {
+      e.preventDefault();
+      history.pushState(null, null, e.target.parentElement.href);
+      router();
+    }
+  });
   router();
 });
 

@@ -5,12 +5,12 @@ module.exports = {
 
   watch: false,
 
-  entry: './javascript/router.js',
+  entry: './javascript/Router.js',
 
   output: {
     // eslint-disable-next-line no-undef
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.bundle.js',
+    filename: 'index.js',
   },
 
   module: {
