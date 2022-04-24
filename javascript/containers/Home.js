@@ -3,6 +3,7 @@ export default class {
     this.typeWritterEffect();
     this.pulseEffect();
     this.selectNavItem();
+    this.showSecondaryNav();
   }
 
   typeWritterEffect() {
@@ -60,5 +61,10 @@ export default class {
       e.classList.remove('js-navItemSelected');
     });
     allLink[0].classList.add('js-navItemSelected');
+  }
+
+  showSecondaryNav() {
+    const SecondaryNav = document.querySelector('div.secondary-nav');
+    SecondaryNav.style.display = 'flex';
   }
 }
