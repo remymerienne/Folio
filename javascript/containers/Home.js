@@ -3,7 +3,7 @@ export default class {
     this.typeWritterEffect();
     this.pulseEffect();
     this.selectNavItem();
-    this.showSecondaryNav();
+    // this.showSecondaryNav();
   }
 
   typeWritterEffect() {
@@ -63,8 +63,8 @@ export default class {
     allLink[0].classList.add('js-navItemSelected');
   }
 
-  showSecondaryNav() {
-    const SecondaryNav = document.querySelector('div.secondary-nav');
-    SecondaryNav.style.display = 'flex';
-  }
+  // showSecondaryNav() {
+  //   const SecondaryNav = document.querySelector('div.secondary-nav');
+  //   SecondaryNav.style.display = 'flex';
+  // }
 }

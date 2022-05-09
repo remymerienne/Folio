@@ -2,7 +2,7 @@ export default class {
   constructor() {
     this.pulseEffect();
     this.selectNavItem();
-    this.hideSecondaryNav();
+    // this.hideSecondaryNav();
   }
 
   pulseEffect() {
@@ -21,10 +21,10 @@ export default class {
     allLink[1].classList.add('js-navItemSelected');
   }
 
-  hideSecondaryNav() {
-    const SecondaryNav = document.querySelector('div.secondary-nav');
-    if (window.matchMedia('(max-width: 590px)').matches) {
-      SecondaryNav.style.display = 'none';
-    }
-  }
+  // hideSecondaryNav() {
+  //   const SecondaryNav = document.querySelector('div.secondary-nav');
+  //   if (window.matchMedia('(max-width: 590px)').matches) {
+  //     SecondaryNav.style.display = 'none';
+  //   }
+  // }
 }

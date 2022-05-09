@@ -13,6 +13,9 @@
   @include md-l {
     left: 92%;
   }
+  @include sm {
+    display: none;
+  }
 
   .chip {
     width: 10px;

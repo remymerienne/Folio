@@ -23,6 +23,9 @@
   @include sm {
     padding-top: 90px;
   }
+  @include nn {
+    padding-top: 80px;
+  }
 
   &-img {
     display: flex;
@@ -49,6 +52,9 @@
 
     @include xs {
       height: 470px;
+    }
+    @include nn {
+      height: 400px;
     }
 
     img {
@@ -98,6 +104,9 @@
       @include md-l {
         text-align: center;
         margin: 35px;
+      }
+      @include nn {
+        margin-top: 20px;
       }
     }
 
