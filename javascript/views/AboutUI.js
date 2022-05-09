@@ -2,7 +2,7 @@ export default () => {
   return `
     <main class="about">
       <div class="about-img">
-        <img src="./images/dev-generic-lossy.jpg" alt="">
+        <img src="./images/developer.jpg" alt="">
       </div>
       <section class="about-info">
         <header>
