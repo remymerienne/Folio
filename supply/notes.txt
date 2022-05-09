@@ -14,10 +14,6 @@ To Do List :
 - organiser les typo ?
 - Faire les liens sociaux
 - Download cv
-- revoir animation de la page d'accueil
-- bloquer le scroll quand menu ouvert
-- revoir le nom de chemin de l'accueil
 - Découpage des communs (prévoir la traduction)
-- Recharger les images pour allègement
 
 *******************************************************************************

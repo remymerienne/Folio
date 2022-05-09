@@ -11,6 +11,7 @@ export default class {
     const header = document.querySelector('header.header');
     const folio = document.querySelector('header .folio-header');
     const wrap = document.querySelector('div.wrap');
+    const html = document.querySelector('html');
 
     iconsBox.addEventListener('click', () => {
       lines.classList.toggle('js-lines');
@@ -19,6 +20,7 @@ export default class {
       header.classList.toggle('js-header');
       folio.classList.toggle('js-folio');
       wrap.classList.toggle('js-wrap');
+      html.classList.toggle('js-html');
     });
   }
 }

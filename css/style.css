@@ -10664,6 +10664,10 @@ html {
   background-color: #2b3e50;
 }
 
+.js-html {
+  overflow-y: hidden;
+}
+
 /* open-sans-regular - latin */
 @font-face {
   font-family: "Open Sans";
@@ -10994,7 +10998,7 @@ html {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   width: 265px;
   height: 100vh;
